@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://mumbai-metro-api.onrender.com/api";
 
 // Initialize Map
 const map = L.map('map').setView([19.0760, 72.8777], 12);
@@ -190,4 +190,3 @@ function renderResults(data) {
         map.fitBounds(bounds, { padding: [40, 40] });
     }
 }
-
