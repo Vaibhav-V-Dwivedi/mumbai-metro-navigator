@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Metro Route Navigator</title>
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Panel for UI -->
+        <aside class="sidebar">
+            <header>
+                <h1>Mumbai Metro Route</h1>
+            </header>
+            
+            <section class="form-section">
+                <div class="input-group">
+                    <label for="start-station">From</label>
+                    <select id="start-station">
+                        <option value="">Select Start Station</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="end-station">To</label>
+                    <select id="end-station">
+                        <option value="">Select Destination</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="preference">Preference</label>
+                    <select id="preference">
+                        <option value="MIN_TIME">Fastest Time</option>
+                        <option value="MIN_STOPS">Minimum Stops</option>
+                    </select>
+                </div>
+                
+                <button id="find-route-btn">Find Route</button>
+            </section>
+            
+            <!-- Dynamic Results Panel -->
+            <section class="results-section" id="results-panel" style="display: none;">
+                <h2>Route Details</h2>
+                <div id="metadata-container">
+                    <div class="stat"><span id="meta-time">0</span> min</div>
+                    <div class="stat"><span id="meta-stops">0</span> stops</div>
+                    <div class="stat"><span id="meta-dist">0</span> km</div>
+                </div>
+                
+                <div class="itinerary-timeline" id="itinerary-container">
+                    <!-- Dynamic timeline steps will be injected via JS -->
+                </div>
+            </section>
+        </aside>
+        
+        <!-- Main Map View -->
+        <main class="map-container">
+            <div id="map"></div>
+        </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
