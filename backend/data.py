@@ -19,11 +19,11 @@ def build_mumbai_metro_graph() -> Graph:
         
     # Yellow Line 2A
     l2a_nodes = [
-        Node("L2A_DAHISAR", "Dahisar East", "#FFFF00", "Yellow Line 2A", True, {"lat": 19.2486, "lng": 72.8596}),
-        Node("L2A_BORIVALI", "Borivali West", "#FFFF00", "Yellow Line 2A", False, {"lat": 19.2274, "lng": 72.8496}),
-        Node("L2A_MALAD", "Malad West", "#FFFF00", "Yellow Line 2A", False, {"lat": 19.1865, "lng": 72.8427}),
-        Node("L2A_GOREGAON", "Goregaon West", "#FFFF00", "Yellow Line 2A", False, {"lat": 19.1620, "lng": 72.8402}),
-        Node("L2A_ANDHERIW", "Andheri West", "#FFFF00", "Yellow Line 2A", True, {"lat": 19.1235, "lng": 72.8300})
+        Node("L2A_DAHISAR", "Dahisar East", "#D8C007", "Yellow Line 2A", True, {"lat": 19.2486, "lng": 72.8596}),
+        Node("L2A_BORIVALI", "Borivali West", "#D8C007", "Yellow Line 2A", False, {"lat": 19.2274, "lng": 72.8496}),
+        Node("L2A_MALAD", "Malad West", "#D8C007", "Yellow Line 2A", False, {"lat": 19.1865, "lng": 72.8427}),
+        Node("L2A_GOREGAON", "Goregaon West", "#D8C007", "Yellow Line 2A", False, {"lat": 19.1620, "lng": 72.8402}),
+        Node("L2A_ANDHERIW", "Andheri West", "#D8C007", "Yellow Line 2A", True, {"lat": 19.1235, "lng": 72.8300})
     ]
     for n in l2a_nodes: g.add_node(n)
         
